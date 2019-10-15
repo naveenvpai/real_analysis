@@ -45,6 +45,18 @@ digraph G {
   metr_sp -> func_comp;
   contin -> two_target;
   func_comp -> two_target;
+  open -> ball_toss;
+  contin -> ball_toss;
+  lim_pt -> contin_lim;
+  contin -> contin_combo;
+  vector_sp -> contin_combo;
+  compa -> ball_of_balls;
+  closed -> ball_of_balls;
+  compa -> delegate;
+  contin -> delegate;
+  ball_of_balls -> contin_clo_bou;
+  delegate -> contin_clo_bou;
+  contin_clo_bou -> contin_sup_inf;
 }
 
 /*
@@ -59,4 +71,11 @@ digraph G {
  * microscope = Cantor 1/3 set is perfect
  * circ_ring = Characterization of Connected Sets
  * two_target = Composition of Partially Continuous Function is Partially Continuous
+ * ball_toss = Continuous iff preimage of open sets are open
+ * delegate = Continuous mpas preserve compactness
+ * contin_lim = Continuous maps preserve limits
+ * contin_combo = Combos of continuous maps are continuous
+ * ball_of_balls = Compact implies closed and bounded
+ * contin_clo_bou = Continuous func image of compact set is closed and bounded;
+ * contin_sup_inf = Continuous func achieves inf and sup on compact set
  * */
