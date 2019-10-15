@@ -1,0 +1,62 @@
+digraph G {
+  metr_sp -> neighb;
+  metr_sp -> compl;
+  neighb -> int_pt;
+  neighb -> lim_pt;
+  neighb -> iso_pt;
+  int_pt -> open;
+  lim_pt -> closed;
+  lim_pt -> closur;
+  lim_pt -> dense;
+  closed -> perf;
+  closed -> rel_clo;
+  open -> rel_op;
+  open-> op_cov;
+  op_cov -> compa;
+  compl -> de_morg;
+  compl -> subway;
+  open -> subway;
+  closed -> subway;
+  subway -> one_th_balls;
+  compa -> one_th_balls;
+  open -> subsub;
+  de_morg -> subsub;
+  subsub -> patch;
+  compa -> patch;
+  subway -> patch;
+  closed -> flip_phone;
+  closur -> flip_phone;
+  compa -> rare;
+  subway -> rare;
+  de_morg -> rare;
+  compa -> sparse;
+  lim_pt -> sparse;
+  rare -> diameter;
+  vector_sp -> convex;
+  metr_sp -> convex;
+  closur -> separ;
+  separ -> connect;
+  connect -> circ_ring;
+  metr_sp -> func_lim;
+  metr_sp -> contin;
+  perf -> microscope;
+  func_lim -> func_lim_trans;
+  contin -> func_cont;
+  metr_sp -> func_comp;
+  contin -> two_target;
+  func_comp -> two_target;
+}
+
+/*
+ * de_morg = De Morgan's Law
+ * subway = Complement of Open Sets is Closed
+ * one_th_balls = Compact Sets are Closed
+ * subsub = Union/Intersection of Open/Closed Sets
+ * patch = Closed subsets of compact sets are compact
+ * flip_phone = Characterization of Closure
+ * rare = Infinite Intersection of Compact Sets Nonempty when Finite Intersection Always Nonempty
+ * sparse = Compact sets are Sequentially compact
+ * microscope = Cantor 1/3 set is perfect
+ * circ_ring = Characterization of Connected Sets
+ * two_target = Composition of Partially Continuous Function is Partially Continuous
+ * */
