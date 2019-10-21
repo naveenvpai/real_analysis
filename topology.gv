@@ -40,7 +40,7 @@ digraph G {
   metr_sp -> func_lim;
   metr_sp -> contin;
   perf -> microscope;
-  func_lim -> func_lim_trans;
+  func_lim -> func_lim_transl;
   contin -> func_cont;
   metr_sp -> func_comp;
   contin -> two_target;
@@ -57,6 +57,20 @@ digraph G {
   ball_of_balls -> contin_clo_bou;
   delegate -> contin_clo_bou;
   contin_clo_bou -> contin_sup_inf;
+  delegate -> alibi
+  patch -> alibi
+  subway -> alibi
+  metr_sp -> unif_contin
+  unif_contin -> frog_egg
+  compa -> frog_egg
+  contin -> frog_egg
+  circ_ring -> split_gap
+  ball_toss -> split_gap
+  split_gap -> butt_cheeks
+  topol -> top_sp
+  top_sp -> top_contin
+  top_sp -> top_lim
+  top_sp -> three_slices
 }
 
 /*
@@ -78,4 +92,9 @@ digraph G {
  * ball_of_balls = Compact implies closed and bounded
  * contin_clo_bou = Continuous func image of compact set is closed and bounded;
  * contin_sup_inf = Continuous func achieves inf and sup on compact set
+ * alibi = 1-to-1 map from compact metric space preserves open sets
+ * frog_egg = continuous map from a compact metric space is uniformly continuous
+ * split_gap = continuous maps preserve connectedness
+ * butt_cheeks = intermediate value theorem
+ * three_slices = extended reals topology makes R compact
  * */
