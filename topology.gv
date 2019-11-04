@@ -71,6 +71,43 @@ digraph G {
   top_sp -> top_contin
   top_sp -> top_lim
   top_sp -> three_slices
+  discont1
+  discont2
+  func_mono
+  func_mono -> floorklift
+  discont2 -> mono_gap
+  floorklift -> mono_gap
+  func_mono -> staircase
+  floorklift -> staircase
+  discont1 -> staircase
+  metr_sp -> func_conv
+  metr_sp -> func_conv_unif
+  func_conv_unif -> func_cauch_unif
+  func_conv_unif -> func_unif_sup
+  func_ser_conv_unif
+  contin -> follower
+  func_conv_unif -> follower
+  C -> timestamp
+  follower -> timestamp
+  metr_sp -> complete
+  complete -> timestamp
+  compa -> func_layers
+  contin -> func_layers
+  func_conv -> func_layers
+  neighb -> tot_boun
+  tot_boun -> ballception
+  compa -> ballception
+  complete -> ballception
+  tot_boun -> ballgame
+  metr_sp -> ptwise_boun
+  metr_sp -> equi_contin
+  frog_egg -> split_fin_min
+  func_unif_sup -> split_fin_min
+  func_cauch_unif -> split_fin_min
+  ptwise_boun -> arzela
+  equi_contin -> arzela
+  closed -> arzela
+  compa -> arzela
 }
 
 /*
@@ -97,4 +134,17 @@ digraph G {
  * split_gap = continuous maps preserve connectedness
  * butt_cheeks = intermediate value theorem
  * three_slices = extended reals topology makes R compact
+ * floorklift = left and right limits always exist for monotonically increasing func + inequality involving sup/inf
+ * staircase = Monotone function on open interval has countably many discontinuities
+ * mono_gap = Monotone funcs R to R have no discont of 2nd kind
+ * func_cauch_unif = Equivalent characterization of function uniform convergence
+ * func_unif_sup = Converges uniformly iff supremum of distance goes to zero as function sequence goes to infinity
+ * func_ser_conv_unif = Function series converges uniformsly if supremum less than terms of convergent sequence (via comparison test)
+ * follower = if sequence of pointwise convergent, continuous functions converges uniformly then converges to continuous function
+ * timestamp = if Y complete, C(X;Y) is complete
+ * func_layers = monotone sequence of continuous functions on a compact metric space converges uniformly
+ * ballception = compact iff totally bounded and complete
+ * ballgame = if you have arbitrary epsilon maps with totally bounded images as well as "reverse continuity" then totally bounded
+ * split_fin_min = Cauchy sequence of contin,boun functions from compact metric space is equicontin
+ * arzela = Arzela-Escoli: set of contin,boun funcs is compact iff closed and ptwise bounded and equicontinuous
  * */
