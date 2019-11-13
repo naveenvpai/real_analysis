@@ -110,10 +110,11 @@ digraph G {
   compa -> arzela
   char_func
   step_func
-  contin -> ball_part
+  C -> ball_part
+  unif_contin -> ball_part
   compa -> ball_part
   step_func -> ball_part
-  algebra
+  C -> algebra
   algebra -> unif_closed
   unif_closed -> unif_closure
   algebra -> sep_points
