@@ -123,6 +123,24 @@ digraph G {
   algebra -> normali_uterus
   neighb -> normali_uterus
   compa -> normali_uterus
+  normali_uterus -> cover_prod
+  compa -> cover_prod
+  cover_prod -> cum_step
+  func_lim -> diff
+  diff -> diff_contin
+  diff -> diff_alg
+  diff -> comp_err
+  neighb -> loc_extr
+  loc_extr -> loc_min
+  loc_extr -> loc_max
+  loc_extr -> frac_sign
+  loc_extr -> frac_sign
+  diff -> gravity
+  loc_extr -> gravity
+  diff -> not_my_min
+  loc_extr -> not_my_min
+  gravity -> lower_sup
+  diff -> lower_sup
 }
 
 /*
@@ -164,4 +182,10 @@ digraph G {
  * arzela = Arzela-Escoli: set of contin,boun funcs is compact iff closed and ptwise bounded and equicontinuous
  * ball_part = claim that all contin,boun functions from [0,1] can be approximated by a step function
  * normali_uterus = lemma that we can create arbitrary uterus func
+ * cover_prod = lemma 2 that we can create low/hi func on disjoint closed sets
+ * comp_err = Chain rule
+ * frac_sign = Derivative is zero at local min or max
+ * gravity = Mean Value Theorem
+ * not_my_min = Intermediate value theorem of derivatives
+ * lower_sup = L'Hopital's rule
  * */
