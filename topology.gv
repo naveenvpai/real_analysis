@@ -150,7 +150,7 @@ digraph G {
   induct_camel -> low_v_upp
   low_v_upp -> refine_glue
   induct_camel -> refine_glue
-  refine_glue -> 3_prong_integ
+  refine_glue -> three_prong_integ
   refine_glue -> enough_pieces
   contin -> enough_pieces
   frog_egg -> enough_pieces
@@ -207,7 +207,7 @@ digraph G {
  * induct_camel = common refinement raises/lowers lower/upper sum
  * low_v_upp = Lower riemann integral does not exceed upper
  * refine_glue = Characterization of riemann integrability
- * 3_prong_integr = for all refinements, sum of function gaps vs lower-upper, sum of function gaps versus integral
+ * three_prong_integr = for all refinements, sum of function gaps vs lower-upper, sum of function gaps versus integral
  * enough_pieces = continuous implies integrable
  * trap_pieces = f monotone, alpha contin implies f integrable
  * */
