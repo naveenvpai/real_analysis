@@ -147,7 +147,9 @@ digraph G {
   refine
   refine -> comm_refine
   refine -> induct_camel
+  riem_integr -> induct_camel
   induct_camel -> low_v_upp
+  riem_integr -> refine_glue
   low_v_upp -> refine_glue
   induct_camel -> refine_glue
   refine_glue -> three_prong_integ
@@ -156,6 +158,17 @@ digraph G {
   frog_egg -> enough_pieces
   contin -> trap_pieces
   frog_egg -> trap_pieces
+  refine_glue -> broken_ruler
+  refine -> broken_ruler
+  frog_egg -> broken_ruler
+  refine_glue -> quick_square
+  refine_glue -> integr_func_lin
+  refine_glue -> integr_monoton
+  refine_glue -> integr_alph_lin
+  refine_glue -> cauch_est
+  refine_glue -> integr_split
+  refine_glue -> integr_prod
+  refine_glue -> integr_tri_ineq
 }
 
 /*
@@ -210,4 +223,6 @@ digraph G {
  * three_prong_integr = for all refinements, sum of function gaps vs lower-upper, sum of function gaps versus integral
  * enough_pieces = continuous implies integrable
  * trap_pieces = f monotone, alpha contin implies f integrable
+ * broken_ruler = f bounded, continuous except on finite set where alpha continuous then integrable
+ * quick_square = integrability preserved by composition into continuous map
  * */
