@@ -169,6 +169,7 @@ digraph G {
   refine_glue -> integr_split
   refine_glue -> integr_prod
   refine_glue -> integr_tri_ineq
+  refine_glue -> wide_partition
 }
 
 /*
@@ -225,4 +226,5 @@ digraph G {
  * trap_pieces = f monotone, alpha contin implies f integrable
  * broken_ruler = f bounded, continuous except on finite set where alpha continuous then integrable
  * quick_square = integrability preserved by composition into continuous map
+ * wide_partition = Value of integral is function value when you use alpha is heaviside
  * */
