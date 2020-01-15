@@ -1,0 +1,34 @@
+digraph G {
+  graph -> degree;
+  graph -> b_{ij};
+  graph -> a_{ij};
+  degree -> 1.2.1;
+  handshake -> 1.2.1;
+  b_{ij} -> handshake;
+  a_{ij} -> handshake;
+  degree -> δ;
+  degree -> ∆;
+  graph -> ε;
+  ε ->
+  graph -> -
+  graph -> +
+  graph -> subgraph
+  subgraph -> indu_subgr
+}
+
+/* DEFINITIONS
+ * graph
+ * degree
+ * subgraph
+ * indu_subgr = induced subraph
+ * ε = |E|/|V| = ||G||/|G|
+ * δ = minimum degree
+ * ∆ = maximum degree
+ * b_{ij} = incidence matrix
+ * a_{ij} = adjacency matrix
+ */
+
+/* THEOREMS
+ * handshake = sum of degrees is twice number of edges
+ *
+ */
